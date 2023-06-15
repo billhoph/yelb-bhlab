@@ -33,7 +33,7 @@ RUN ng build --environment=test --output-path=./test/dist/
 RUN ng build --environment=dev --output-path=./dev/dist/
 
 
-FROM nginx:1.17.10
+FROM nginx:1.25
 MAINTAINER massimo@it20.info
 
 WORKDIR /
