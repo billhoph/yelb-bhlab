@@ -33,7 +33,7 @@ stages:
       displayName: Scan App Tier Image
       inputs:
         scanType: 'images'
-        twistlockService: 'prisma-jp-demo'
+        twistlockService: 'Prisma Cloud Compute console'
         artifact: 'harbor.alson.space/cyberweek/yelb-appserver:v2.0'
 
     - task: Docker@2
@@ -48,7 +48,7 @@ stages:
       displayName: Scan UI Tier Image
       inputs:
         scanType: 'images'
-        twistlockService: 'prisma-jp-demo'
+        twistlockService: 'Prisma Cloud Compute console'
         artifact: 'harbor.alson.space/cyberweek/yelb-ui:v2.0'
 
     - task: Docker@2
@@ -62,5 +62,5 @@ stages:
       displayName: Scan DB Tier Image
       inputs:
         scanType: 'images'
-        twistlockService: 'prisma-jp-demo'
+        twistlockService: 'Prisma Cloud Compute console'
         artifact: 'harbor.alson.space/cyberweek/yelb-db:v2.0'
